@@ -501,6 +501,7 @@ ul > li {
 
 .footer__container {
     width: 1105px;
+    margin: 0, auto ;
 }
 
 .site-menu__sections {
