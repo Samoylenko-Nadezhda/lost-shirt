@@ -52,7 +52,7 @@ body {
     position: absolute;
     display: flex;
     background: url("../img/decor/header-guys.png") center -22px / contain no-repeat;
-    margin-left: 22%;
+    margin-left: 28%;
     background-size: 88%;
 }
 
@@ -104,7 +104,7 @@ body {
     height: 648px;
     width: 555px;
     margin-top: 10px;
-    background: #fff;
+    background: #fcf5e6;
     margin-left: -1px;
 }
 
@@ -149,9 +149,9 @@ body {
 }
 
 .light-line {
-    border: solid 1px;
-    color: #f9f9f9;
+    color: #d9d9d9;
     margin-top: 15px;
+    opacity: 30%;
 }
 
 .tshirt-description {
@@ -192,15 +192,27 @@ body {
     display: flex;
     margin-bottom: 20px;
 }
-
 .color-choise__btn-round {
-    padding-left: 20px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 25px;
+    display: flex;
+    box-sizing:border-box;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
 }
 
+.color-choise__btn-round__active:focus {
+    width: 28px;
+    height: 28px;
+    color: var(--yellow);
+}
+
+:focus {outline:none;}
+
 .color-choise__btn-round-black {
-    background: #737373;
+    background: black;
 }
 
 .color-choise__btn-round-white {
@@ -220,12 +232,112 @@ body {
     background: red;
 }
 
-.color-choise__btn-round__active {
-
-}
-
 .btn__tshirt {
-    width: 120px;
+    width: 130px;
     text-align: center;
     margin-left: 30px;
+}
+.main-description__banner {
+    position: relative;
+    width: 1080px;
+    height: 300px;
+    border: 10px solid var(--yellow);
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.main-description__items {
+    margin-right: 45px;
+    margin-top: 53px;
+    width: 350px;
+}
+
+.washing__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: auto;
+}
+
+.description-text {
+    padding-left: 45px;
+    font-size: 14px;
+    color: var(--blackheader);
+    display: block;
+}
+
+.main-description__washing {
+    padding-bottom: 20px;
+    padding-left: 45px;
+}
+
+.vertical-line {
+    position: absolute;
+    display: flex;
+    border-left: 1px solid #d9d9d9;
+    height: 100%;
+    margin-left: 350px;
+}
+
+.tshirt-description {
+    margin-right: 100px;
+    width: 600px;
+    font-size: 14px;
+    color: var(--blackheader);
+    margin-top: 55px;
+}
+
+.filter {
+    margin-bottom: 70px;
+}
+
+.express-logo {
+    margin: auto auto;
+}
+
+.main-description__banner__express {
+    height: 260px;
+}
+
+.tshirt-description__express {
+    margin-top: 35px;
+}
+
+.main-description__banner__harly {
+    height: 200px;
+}
+
+.harly {
+    height: 56px;
+    width: 254px;
+}
+
+.harly-logo {
+    margin: auto auto;
+}
+
+.main-description__banner__sizes {
+    height: 450px;
+}
+
+.banner-sizes {
+    position: absolute;
+    margin: auto auto;
+}
+
+.sizes__tshirt {
+    width: 250px;
+    height: 220px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.rules {
+    margin-left: 45px;
+}
+
+.item-rule {
+    font-size: 12px;
+    color: var(--blackheader);
 }
