@@ -63,7 +63,6 @@ body {
 }
 
 .tshirt__container {
-    position: relative;
     margin: 0 auto;
     width: 1100px;
 }
@@ -237,13 +236,21 @@ body {
     text-align: center;
     margin-left: 30px;
 }
+
 .main-description__banner {
-    position: relative;
     width: 1080px;
     height: 300px;
     border: 10px solid var(--yellow);
+    display: none;
+}
+
+.tshirt__container {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.main-banners__visible {
     display: flex;
-    margin-bottom: 80px;
 }
 
 .main-description__items {
@@ -275,8 +282,8 @@ body {
     position: absolute;
     display: flex;
     border-left: 1px solid #d9d9d9;
-    height: 100%;
     margin-left: 350px;
+    height: inherit;
 }
 
 .tshirt-description {
@@ -317,11 +324,10 @@ body {
 }
 
 .main-description__banner__sizes {
-    height: 450px;
+    height: 430px;
 }
 
 .banner-sizes {
-    position: absolute;
     margin: auto auto;
 }
 
@@ -340,4 +346,42 @@ body {
 .item-rule {
     font-size: 12px;
     color: var(--blackheader);
+}
+
+.sizes-table {
+    display: flex;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #d9d9d9;
+}
+
+th {
+    height: 61px;
+    width: 74px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #f3efe7;
+}
+
+td {
+    height: 41px;
+    width: 74px;
+    font-size: 12px;
+    text-align: center;
+}
+
+th:first-child {
+    width: 160px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td:first-child {
+    width: 160px;
+    text-align: left;
+    padding-left: 15px;
 }
